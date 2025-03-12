@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root{
-  --texto-primario: #fff3b0;
+  --texto-primario: #e7e7e3;
   --fundo-primario: #335c67;
-  --fundo-tasks-hub: #fff5d6;
-  --fundo-tasks: #fff3b0;
+  --fundo-tasks-hub: #c5c4c1;
+  --fundo-tasks: #b3b0a2;
 }
 
 *{
@@ -74,7 +74,7 @@
   font-family: "Montserrat", sans-serif;
 }
 
-.todoHub {
+/* .todoHub {
   background-color: var(--fundo-tasks-hub);
   min-height: 100vh;
   max-height: 100%;
@@ -117,4 +117,26 @@
   gap: .6rem;
   align-items: center;
   font-size: 1.1rem;
+} */
+
+.todoHub {
+  background-color: var(--fundo-tasks-hub);
+  min-height: 100vh;
+  max-height: 100%;
+  /* padding: .5rem; */
+}
+
+.task {
+  background-color: var(--fundo-tasks);
+  border: 1px solid #000000;
+  margin: .5rem;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  row-gap: .5rem;
+  padding: .5rem;
+}
+
+.task__title {
+  grid-column: 1 / 5;
 }
