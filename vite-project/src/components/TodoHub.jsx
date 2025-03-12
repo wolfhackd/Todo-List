@@ -11,10 +11,6 @@ const TodoHub = () => {
       <Task />
       <Task />
       <Task />
-      <Task />
-      <Task />
-      <Task />
-      <Task />
     </div>
     </>
   )
